@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Demo</title>
+    <script src="floodFill.js" ></script>
+    <script src="p5.js" ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-black-50 bg-black-50">
+      <form class="form-inline">
+        <button onclick = "performFloodFill(grid,x,y)"style= "margin-left:400px ;" class="btn btn-outline-success " type="button">Start</button>
+        <button onclick = "startNode()" style= "margin-left:20px ;"class="btn btn-outline-primary" type="button">Add Start Node</button>
+        <button onclick="clearGrid()"style= "margin-left:20px ;"class="clear btn btn-outline-danger" type="button">Clear</button>
+        <button onclick="addObstacle()"style= "margin-left:20px ;"class="clear btn btn-outline-secondary" type="button">Add Obstacle</button>
+      </form>
+    </nav>
+  </body>
+</html>
