@@ -8,23 +8,7 @@ function setup() {
 }
   clearGrid()
 }
-var clearNow = true;
 function clearGrid(){
-  var red=0;
-  var gray=0;
-  var blue=0;
-  for (let i = 0; i < 10; i++) {
-    for (let j = 0; j < 10; j++) {
-      if(value[i][j] == "red"){
-        red++;
-      }else if (value[i][j] == 100){
-        gray++;
-      }else if (value[i][j] == "blue"){
-        blue++;
-      }
-        }
-}
-if(blue || red === 0 || red+gray ===100)
   for (let i = 0; i < 10; i++) {
     for (let j = 0; j < 10; j++) {
       grid[i][j]=0;
@@ -114,15 +98,15 @@ function sleep(millisecondsDuration)
   })
 }
 function floodFill(image, i, j){
-  sleep(100).then(function() {
+  sleep(50).then(function() {
 
-    if (i < 0 || j < 0 || i >= image.length || j >= image[i].length || image[i][j] === 1 || image[i][j] ===-1)   {
+    if (i < 0 || j < 0 || i >= image.length || j >= image[i].length || image[i][j] === 1 ||image[i][j] === -1 )   {
       return;
     }
         let xx = (i+scaleX) * w;
         let yy = w*(j+scaleY);
-        image[i][j] = 1;
         value[i][j] ="red"
+        grid[i][j]=1
         fill(value[i][j])
         rect(xx, yy, w, w);
     floodFill(image, i + 1, j);
