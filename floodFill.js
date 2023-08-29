@@ -107,7 +107,6 @@ function mouseClicked() {
     }
     }
 }
-
 function sleep(millisecondsDuration)
 {
   return new Promise((resolve) => {
