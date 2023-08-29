@@ -90,10 +90,12 @@ function mouseClicked() {
                 fill(255)
                 rect((x+scaleX)*w, (y+scaleY)*w, w, w);
               }
+              if(value[i][j]!==100){
                 x=i;
                 y=j;
                 fill("blue")
                 rect(xx, yy, w, w);
+              }
             }else if(isObstacle === true){
             value[i][j]=100;
             grid[i][j]=-1;
