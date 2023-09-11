@@ -6,7 +6,7 @@ This is a simple project that visualizes the famous flood fill algorithms
 
 - HTML
 - Bootstrap
-- JavaSctipt
+- Javascript
 - P5.JS
 
 ### Live Demo 
